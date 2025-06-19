@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <title>Hjem</title>
+  <link rel="icon" type="image/x-icon" href="images/htmlBracket.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body class="light">
+  <header id="top" class="header">
+    <img id="sunIcon" src="images/sun.png" alt="Sun Icon" />
+    <p class="headerLogo">JH</p>
+    <nav class="headerNav">
+      <img id="hamburgerIcon" class="icon" src="images/hamburger.png" alt="Hamburger Icon" />
+      <ul id="navList" class="hidden">
+        <li>Nav 1</li>
+        <li>Nav 2</li>
+        <li>Nav 3</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <!-- Hero section / Home section / Main secton -->
+      <form
+      <label for="nameInput">
+          Skriv navnet ditt 
+          <input type="text" name="nameInput" id="nameInput"  placeholder="Ola og Nordmenn">
+      </label>
+
+      <label for="">
+        <input type="number"  name=""   id="">
+      </label>
+
+      <label for="">
+        <input type="checkbox" name="" id="autofocus">
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="">
+      </label>
+
+      <label for="">
+        <input type="date" name="date" id="">
+      </label>
+      
+      <!-----
+      undervisning challanges ----->
+
+      <label for="">
+        <input type="email" name=""  id="">
+        <input type="password" name=" "  id="">
+       </label>
+
+       <label for="">
+        <input type="button" value="send">
+       </label>
+
+       <label>
+        <input type="button" value="send">
+       </label>
+      </form>
+    </section>
+  </main>
+
+  <section class="section">
+<!-- Innlogging -->
+<form>
+  <label for="userEmail">
+    Email:
+    <input type="email" name="userEmail" id="userEmail" placeholder="Eks. olanordmann@yahoo.no">
+  </label>
+
+  <label for="userPassword">
+    <input type="password" name="userPassword" id="userPassword">
+  </label>
+
+  <label for="viewPassword">
+    <input type="checkbox" name="viewPassword" id="viewPassword">
+    vis password
+  </label>
+
+  <label for="rememberLogin">
+    <input type="checkbox" name="rememberLogin" id="rememberLogin">
+    Husk innLogging
+   </label>
+
+   <button>Logg inn</button>
+
+</form>
+  </section>
+
+  <section class="section">
+<!--Målehetskonveterer-->
+<label for="unitInput">
+  Skriv et tall
+  <input type="number"  name="unitInput" id="unitInput">
+</label>
+
+<label for="unitTo">
+  <select name="unitTo" id="unitTo">
+    <option value="mm">MM</option>
+    <option value="cm">CM</option>
+    <option value="m">M</option>
+    <option value="km">KM</option>
+  </select>
+</label>
+
+<label for="unitForm">
+  <select name="unitForm" id="unitForms">
+    <option value="mm">MM</option>
+    <option value="cm">CM</option>
+    <option value="m">M</option>
+    <option value="km">KM</option>
+  </select>
+</label>
+
+<button id="submitButton">Send</button>
+<p id="unitOutput"> <!--Innnhold kommer fra JS-->
+</p>
+  </section>
+
+
+  <footer class="footer">
+    <h3>Laget av BS</h3>
+    <p>Finn meg på <a href="">github</a></p>
+    <a href="#top">
+      <img class="arrowIcon" src="images/downArrow.png" alt="Arrow Up Icon" />
+    </a>
+  </footer>
+</body>
+
+</html>

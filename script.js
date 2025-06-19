@@ -35,18 +35,29 @@ loginButton.addEventListener("click", function (event) {
 console.log("Button clicked!");
 
 // Hent
-const userEmail = document.querySelector("#userEmail");
+const userEmail = document.querySelector("#userEmail"); // Henter selve input- elementet
 const userPassword = document.querySelector("#userPassword");
 const viewPassword = document.querySelector("#viewPassword");
 const rememberLogin = document.querySelector("#rememberLogin");
-console.log(userEmail, userPassword, rememberLogin);
+const displayLogin = document.querySelector("#loginDisplay");// Henter div-elementet
+console.log(userEmail, userPassword, rememberLogin, loginDisplay);
 
 // Modifiser  
-const emailValue = userEmail.value;
+const emailValue = userEmail.value; // Henter verdien inni elementet
 const passwordValue = userPassword.value;
+const emailDisplay = document.createElement("p"); // Legr et nytt p-elementet
+emailDisplay.textContent = emailValue; // Gir vi nytt elemet innhold som er verdi fra input
+const passwordDisplay = document.createElement("p");
+passwordDisplay.textContent = passwordValue;
+const viewValue = viewPassword.checked;
+console.log(viewValue + "Passord er synlig");
+const rememberValue = rememberLogin.checked;
+console.log(rememberValue + "Innloggingen din er lagret!");
 
 // Send 
-console.log("Din epost addresse er: " + emailValue + ".")
-
+console.log("Din epost addresse er: " + emailValue + ".");
+console.log(`Ditt passord er: ${passwordValue}.`);
+loginDisplay.appendChild(emailDisplay); // Gir div-element det nye p-elementet med innhold
+loginDisplay.appendChild(passwordDisplay);
 });
 
